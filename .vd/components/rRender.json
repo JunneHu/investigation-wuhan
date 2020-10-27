@@ -1,0 +1,33 @@
+{
+  "name": "RRender",
+  "description": "React 渲染引擎",
+  "version": "1.0.0",
+  "compatibility": {
+    "chrome": "latest",
+    "firefox": "latest",
+    "safari": "latest",
+    "ie": "9+"
+  },
+  "module": [
+    "__tests__",
+    "style",
+    "doc",
+    "json"
+  ],
+  "format": "class",
+  "isPropCheck": true,
+  "note": "",
+  "lifecycleMountingOptions": [
+    "constructor",
+    "render",
+    "componentWillMount"
+  ],
+  "type": 0,
+  "lifecycle": [
+    "constructor",
+    "render",
+    "componentWillMount"
+  ],
+  "author": "尹传武",
+  "camelCaseName": "rRender"
+}

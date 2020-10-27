@@ -1,0 +1,63 @@
+.csc-card {
+    .ant-upload-list-item{
+        display: none;
+    }
+    .chose-bg{
+        .chosePro{
+            float: left;
+            width:88px;
+            height: 32px;
+            margin-right: 20px;
+            .file-input{
+                width:88px;
+                height: 32px;
+                opacity: 0;
+                position: relative;
+                left:-70px;
+                z-index: 9;
+                cursor: pointer;
+            }
+            .file-btn{
+                position: absolute;
+                top:0px;
+                z-index: 1;
+                margin-left: 0;
+            }
+        }
+    }
+    .ant-form {
+        .ant-col-20 {
+            &>* {
+                float: left;
+            }
+        }
+        .ant-form-item {
+            .ant-form-item-label {
+                width: 70px;
+                float: left;
+                line-height: 32px;
+                text-align: left;
+                label {
+                    color: #919191;
+                }
+            }
+            .ant-form-item-control {
+                margin-left: 70px;
+                line-height: 32px;
+                
+            }
+            &.last-item{
+                .ant-form-item-control{
+                    margin-left: 0;
+                }
+            }
+        }
+        .ant-btn {
+            margin-left: 15px;
+        }
+        .first-btn{
+            margin-right: 15px;
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+.drop-panel-container {
+  position: relative;
+  max-width: 160px;
+  // height:60px;
+  // width:60px;
+  // display: inline-block;
+  // text-align: center;
+  // vertical-align: middle;
+
+  .panel-header {
+    // margin-top:20px;
+  }
+
+  .panel-body {
+    position: absolute;
+    font-size: 12px;
+    color: #6a6a6a;
+    top: calc(100%);
+    text-align: left;
+    display: none;
+    background: white;
+    border-radius: 0 0 3px 3px;
+    border:1px solid #e3e9ed;
+    border-top:none;
+  }
+
+  &:hover .panel-body {
+    display: block;
+  }
+}

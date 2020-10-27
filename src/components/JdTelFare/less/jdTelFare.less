@@ -1,0 +1,89 @@
+.jd-telFare {
+    .ant-upload-list-text{
+        //display: none;
+    }
+    .ant-form {
+        .ant-form-item-label {
+            width: 85px;
+            float: left;
+            line-height: 32px;
+            label {
+                color: #919191;
+            }
+        }
+        .ant-form-item-control {
+            margin-left: 85px;
+            line-height: 32px;
+        }
+        .order-item {
+            position: relative;
+            .chose-Btn {
+                position: absolute;
+                right: 5px;
+                top: 0;
+            }
+        }
+    }
+    .btn-bg {
+        .ant-btn {
+            float: left;
+            margin-left: 15px;
+        }
+    }
+    .chose-bg{
+        .chosePro{
+            float: left;
+            width:88px;
+            height: 32px;
+            margin-right: 15px;
+            margin-left: 15px;
+            position: relative;
+            .file-input{
+                width:88px;
+                height: 32px;
+                opacity: 0;
+                position: absolute;
+                left: -85px;
+                top:0;
+                z-index: 9;
+                cursor: pointer;
+            }
+            .file-btn{
+                position: absolute;
+                top:0px;
+                z-index: 1;
+            }
+        }
+    }
+    .time-item {
+        &.ant-col-20 {
+            &>* {
+                float: left;
+            }
+            .ant-form-item {
+                .ant-form-item-label {
+                    width: 120px;
+                    float: left;
+                    line-height: 32px;
+                    text-align: left;
+                    label {
+                        color: #919191;
+                    }
+                }
+                .ant-form-item-control {
+                    margin-left: 120px;
+                    line-height: 32px;
+                }
+                &.last-item {
+                    .ant-form-item-control {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .ant-btn {
+                float: left;
+                margin-left: 15px;
+            }
+        }
+    }
+}

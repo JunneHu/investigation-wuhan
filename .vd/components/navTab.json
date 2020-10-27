@@ -1,0 +1,29 @@
+{
+  "name": "NavTab",
+  "description": "头部导航卡",
+  "version": "1.0.0",
+  "compatibility": {
+    "chrome": "latest",
+    "firefox": "latest",
+    "safari": "latest",
+    "ie": "9+"
+  },
+  "module": [
+    "images",
+    "style"
+  ],
+  "format": "class",
+  "lifecycleMountingOptions": [
+    "constructor",
+    "render"
+  ],
+  "isPropCheck": true,
+  "note": "",
+  "type": 0,
+  "lifecycle": [
+    "constructor",
+    "render"
+  ],
+  "author": "张雷",
+  "camelCaseName": "navTab"
+}

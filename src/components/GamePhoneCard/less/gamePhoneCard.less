@@ -1,0 +1,62 @@
+.game-card {
+    .ant-col-6{
+        .ant-form-item-label{
+            width:45px;
+            float: left;
+            text-align: left;
+            line-height: 32px;
+            label{
+                color: #919191;
+            }
+        }
+        .ant-form-item-control{
+            margin-left: 45px;
+            line-height: 32px;
+            padding-right: 20px;
+        }
+    }
+    .time-item {
+        &.ant-col-16 {
+            &>* {
+                float: left;
+            }
+            .ant-form-item {
+                .ant-form-item-label {
+                    width: 70px;
+                    float: left;
+                    line-height: 32px;
+                    text-align: left;
+                    label {
+                        color: #919191;
+                    }
+                }
+                .ant-form-item-control {
+                    margin-left: 70px;
+                    line-height: 32px;
+                }
+                &.last-item {
+                    .ant-form-item-control {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .ant-btn {
+                float: left;
+                margin-left: 15px;
+            }
+        }
+    }
+    .card-list{
+        position: relative;
+        .total-mess{
+            position: absolute;
+            bottom: 20px;
+            font-weight: bold;
+            font-size: 12px;
+            span{
+                padding-right: 50px;
+                color: #333333;
+            }
+        }
+    }
+}

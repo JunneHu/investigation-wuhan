@@ -1,0 +1,227 @@
+@import "../../../Theme/less/theme.less";
+@import (reference) "~rework";
+// ul
+// [1]
+.@{anole-prefix}-menu {
+    font-size: 12px;
+    &-item,
+    &-submenu-title {
+        position: relative;
+        line-height: 20px;
+        .@{anole-prefix}-menu-item-text {
+            display: block;
+            .text-overflow-nowrap-ellipsis();
+            padding-right: 12px;
+        }
+        .@{anole-prefix}-menu-item-icon,
+        .@{anole-prefix}-menu-item-arrow {
+            position: absolute;
+        }
+        .@{anole-prefix}-menu-item-icon {
+            left: 15px;
+            top: 11px;
+            font-size: 18px;
+        }
+        .@{anole-prefix}-menu-item-arrow {
+            transition: all .5s;
+            right: 15px;
+            font-size: 12px;
+        }
+    } // li
+    &-item {
+        // <i> + <span> + <i>
+        // <i> + <span>
+        // <span> + <i>
+        // <span>
+        // <a>
+        // "text"
+        &-icon {}
+        &-text {}
+        &-arrow {}
+        // li.
+        &:hover {}
+        &-active {}
+        &-selected {}
+        &-disabled {}
+    } // li
+    &-submenu {
+        &-title {
+            // <i> + <span> + <i>
+            // <i> + <span>
+            // <span> + <i>
+            // <span>
+        }
+        .@{anole-prefix}-menu-sub {
+            display: none;
+        } // li.
+        &:hover {}
+        &-active {}
+        &-open {
+            &>.@{anole-prefix}-menu-submenu-title {
+                .@{anole-prefix}-menu-item-arrow {
+                    transform: rotate(90deg);
+                }
+            }
+            .@{anole-prefix}-menu-sub {
+                display: block;
+            }
+            &>.@{anole-prefix}-menu-submenu-open {
+                &>.@{anole-prefix}-menu-submenu-title {}
+            }
+        }
+        &-disabled {}
+        // mode
+        &-vertical {
+            &-right {}
+        }
+        &-horizontal {}
+        &-inline {}
+    } // ul.ul
+    &-sub {
+        .@{anole-prefix}-menu-item,
+        .@{anole-prefix}-menu-submenu {
+            .@{anole-prefix}-menu-item-text {}
+        } // status
+        &-active {}
+        &-selected {}
+        &.@{anole-prefix}-menu-hidden {
+            display: none;
+        }
+        &-disabled {}
+        // mode
+        &-vertical {
+            &-right {}
+        }
+        &-horizontal {}
+        &-inline {}
+        // ul.ul.ul
+        .@{anole-prefix}-menu {
+            &-sub {
+                .@{anole-prefix}-menu-item,
+                .@{anole-prefix}-menu-submenu {
+                    .@{anole-prefix}-menu-item-text {
+                        padding-left: 20px;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    &-wrapper {
+        position: relative;
+        z-index: 1;
+    }
+    &-main {
+        position: relative;
+        z-index: 2;
+        &-toggle {
+            .icon {}
+        }
+        .@{anole-prefix}-menu {
+            &-item,
+            &-submenu-title {
+                padding: 10px 15px 10px 46px;
+            }
+            .@{anole-prefix}-menu-item-arrow {
+                top: 14px;
+            } // ul.ul
+            &-sub {
+                .@{anole-prefix}-menu-item,
+                .@{anole-prefix}-menu-submenu {
+                    .@{anole-prefix}-menu-item-text {
+                        padding-left: 0;
+                    }
+                } // status
+                &-active {}
+                &-selected {}
+                &-hidden {}
+                &-disabled {}
+                // mode
+                &-vertical {
+                    &-right {}
+                }
+                &-horizontal {}
+                &-inline {}
+                // ul.ul.ul
+                .@{anole-prefix}-menu {
+                    &-sub {
+                        .@{anole-prefix}-menu-item,
+                        .@{anole-prefix}-menu-submenu {
+                            .@{anole-prefix}-menu-item-text {
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-panel {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        bottom: 0;
+        z-index: 1;
+        width: 160px;
+        &-toggle {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-heading {
+            padding: 20px 30px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .@{anole-prefix}-menu {
+            &-item,
+            &-submenu-title {
+                padding: 5px 15px 5px 30px;
+            }
+            .@{anole-prefix}-menu-item-arrow {
+                top: 8px;
+            } // ul.ul
+            &-sub {
+                .@{anole-prefix}-menu-item,
+                .@{anole-prefix}-menu-submenu {
+                    .@{anole-prefix}-menu-item-text {
+                        padding-left: 10px;
+                        padding-right: 0;
+                    }
+                } // status
+                &-active {}
+                &-selected {}
+                &-hidden {}
+                &-disabled {}
+                // mode
+                &-vertical {
+                    &-right {}
+                }
+                &-horizontal {}
+                &-inline {}
+                // ul.ul.ul
+                .@{anole-prefix}-menu {
+                    &-sub {
+                        .@{anole-prefix}-menu-item,
+                        .@{anole-prefix}-menu-submenu {
+                            .@{anole-prefix}-menu-item-text {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-root {}
+    // theme
+    &-light {}
+    &-dark {}
+    // mode
+    &-vertical {
+        &-right {}
+    }
+    &-horizontal {}
+    &-inline {}
+}

@@ -1,0 +1,136 @@
+{
+  "dir": "__dirname",
+  "dll": {
+    "name": "vendor",
+    "target": "var",
+    "content": [
+      "babel-polyfill",
+      "react",
+      "react-dom",
+      "dva",
+      "axios"
+    ]
+  },
+  "directory": {
+    "development": {
+      "envName": "src",
+      "sprite": "sprite",
+      "component": "components",
+      "container": "routes",
+      "model": "models",
+      "service": "services",
+      "config": "configs",
+      "util": "utils",
+      "style": "less",
+      "data": "json",
+      "test": "__test__",
+      "document": "doc",
+      "source": "src"
+    },
+    "build": {
+      "envName": ".build"
+    },
+    "production": {
+      "envName": "dist",
+      "resource": "resources",
+      "dll": "dll",
+      "javascript": "js",
+      "style": "css",
+      "asset": "images"
+    }
+  },
+  "general": {
+    "publicPath": "",
+    "target": "web",
+    "resolve": {
+      "alias": {
+        "rework": "rework.less/rework.less",
+        "sprite": "sprite.less"
+      },
+      "extensions": [
+        ".web.js",
+        ".js"
+      ],
+      "mainFields": [
+        "browser",
+        "jsnext:main",
+        "main"
+      ]
+    },
+    "externals": {
+      "configs": "configs"
+    },
+    "performance": {
+      "maxAssetSize": 400000,
+      "maxEntrypointSize": 600000
+    }
+  },
+  "compiler": {
+    "css": {
+      "less": {
+        "minimize": true
+      },
+      "postcss": {
+        "autoprefixer": {
+          "browsers": [
+            "last 3 versions",
+            "> 1%"
+          ]
+        }
+      }
+    },
+    "asset": {
+      "image": {
+        "optimizer": {
+          "limit": 10000
+        }
+      },
+      "svg": {
+        "sprite": {
+          "extract": false
+        }
+      }
+    },
+    "html": {
+      "title": "福禄管家-警企协查平台",
+      "description": "description",
+      "keywords": "keywords"
+    }
+  },
+  "theme": {
+    "border-radius-base": "5px",
+    "border-radius-sm": "5px",
+    "primary-color": "#1e2a38",
+    "table-row-hover-bg":"#f1f1f1"
+  },
+  "debug": {
+    "port": 5000,
+    "sync": false,
+    "browsersync": {
+      "port": 5000,
+      "open": true
+    }
+  },
+  "preview": {
+    "port": 5000
+  },
+  "deploy": {
+    "host": "",
+    "port": "",
+    "token": "",
+    "environment": "Node"
+  },
+  "id": "88220a30-f451-11e7-b163-17aeadad1d9a",
+  "type": "pcWeb",
+  "name": "SearchCompany",
+  "productName": "SearchCompany",
+  "description": "SearchCompany",
+  "version": "1.0.0",
+  "compatibility": {
+    "chrome": "latest",
+    "firefox": "latest",
+    "safari": "latest",
+    "ie": "9+"
+  },
+  "routerType": "BrowserRouter"
+}

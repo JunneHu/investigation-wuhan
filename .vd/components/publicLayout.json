@@ -1,0 +1,33 @@
+{
+  "name": "PublicLayout",
+  "description": "PublicLayout",
+  "version": "1.0.0",
+  "compatibility": {
+    "chrome": "latest",
+    "firefox": "latest",
+    "safari": "latest",
+    "ie": "9+"
+  },
+  "module": [
+    "images",
+    "style"
+  ],
+  "format": "class",
+  "lifecycleMountingOptions": [
+    "constructor",
+    "render"
+  ],
+  "isPropCheck": true,
+  "lifecycle": [
+    "constructor",
+    "render"
+  ],
+  "author": "张雷",
+  "saga": {
+    "url": "/api/v1/getData",
+    "requestVarName": "getData",
+    "method": "get"
+  },
+  "type": 1,
+  "camelCaseName": "publicLayout"
+}

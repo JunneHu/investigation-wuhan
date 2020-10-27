@@ -1,0 +1,73 @@
+@import "../../../Theme/less/theme.less";
+@import "~sprite.less";
+@import "~rework";
+
+.@{anole-prefix}-tabs {
+
+  &-bar {}
+    &-nav {
+      .clearfix();
+    }
+      &-tab {
+        position: relative;
+        float: left;
+        width: 160px;
+        height: 40px;
+        margin-right: 1px;
+
+        span {
+          display: block;
+          .text-overflow-nowrap-ellipsis();
+          padding: 10px 30px;
+          line-height: 20px;
+        }
+
+        .icon {
+          position: absolute;
+          top: 12px;
+        }
+
+        .@{anole-prefix}-tabs-tab-collect {
+          left: 8px;
+
+          &.@{anole-prefix}-tabs-tab-collect-active {}
+        }
+        .@{anole-prefix}-tabs-tab-close {
+          right: 8px;
+          padding: 3px;
+          font-size: 16px;
+          display: none;
+
+          &:hover {}
+
+          &:active {}
+        }
+
+        &:hover {
+          .@{anole-prefix}-tabs-tab-close {
+            display: block;
+          }
+        }
+
+        &-active {
+          &:hover {}
+        }
+
+        &-disabled {
+          &:hover {
+            .@{anole-prefix}-tabs-tab-close {
+              display: none;
+            }
+          }
+        }
+      }
+
+    &-panel {
+      display: none;
+
+      &-active {
+        display: block;
+      }
+    }
+
+}
